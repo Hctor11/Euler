@@ -4,6 +4,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const nav = (
+    <div className="nav">
+      <a href="#">Euler</a>
+      <div className="directories">
+        <a href="#">Articles</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  );
+
+  const footer = (
+    <footer>
+      <p>este es un foooter</p>
+    </footer>
+  )
+
   return (
     <html lang="en">
       {/*
@@ -11,7 +28,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        {nav}
+        {children}
+        {footer}
+        </body>
     </html>
   )
 }
