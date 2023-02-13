@@ -1,6 +1,6 @@
 
 export default function Home() {
   return (
-    <h1>Hola los tilines</h1>
+    <h1>Euler</h1>
   )
 }
