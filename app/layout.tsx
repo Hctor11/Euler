@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function RootLayout({
   children,
@@ -7,7 +8,9 @@ export default function RootLayout({
 
   const nav = (
     <div className="nav">
-      <a href="#">Euler</a>
+      <Link href='/'>
+        Euler
+      </Link>
       <div className="directories">
         <a href="#">Articles</a>
         <a href="#">About</a>
