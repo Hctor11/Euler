@@ -20,14 +20,32 @@ a
             margin: 0 10px
 
 .main-title
+    position: relative
     text-align: center
     margin: 40vh 0
+    z-index: 100
 
 .main-image-background
     margin: 0 auto
     display: flex
     justify-content: center    
-    width: 500px
-    height: 100%
+    width: 60%
+    height: 50%
     background-color: #000
-    max-height: 100%
+    max-height: 50%
+    z-index: 1
+
+.main-image
+    position: relative
+    z-index: 1
+    opacity: 0.6
+    animation: rotate-animation 20s infinite linear
+
+@keyframes rotate-animation 
+    0%
+        transform: rotate(0deg)
+    50%
+        transform: rotate(180deg)
+    100%
+        transform: rotate(360deg)
+        

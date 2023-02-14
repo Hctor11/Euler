@@ -1,6 +1,7 @@
 import fs from 'fs';
 import Link from 'next/link'
 import '../styles/home/home.css';
+import Image from 'next/legacy/image';
 
 const getPostData = () => {
   const folder = 'posts/'
@@ -20,13 +21,27 @@ const Home = () => {
       </Link>
     </div>
   ));
+  
+  const imgPath = '/main-image.png'
 
   return (
     <div >
-      <div className="main-image-background">
-        
-      </div>
       <h1 className='main-title'>Learn to understand, not to memorize</h1>
+      <div className="main-image-background">
+        <Image
+          src={imgPath}
+          alt="landing page image"
+          layout='fill'
+          objectFit='contain'
+          className='main-image'
+
+          style={{
+            position: 'relative',
+            zIndex: '1'
+          }
+          }
+        />
+      </div>
       {postPreview}
     </div>
   );
