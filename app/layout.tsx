@@ -1,4 +1,8 @@
 import Link from "next/link";
+import { Work_Sans } from '@next/font/google'
+
+
+const work_sans = Work_Sans({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -8,7 +12,7 @@ export default function RootLayout({
 
   const nav = (
     <div className="nav">
-      <Link href='/'>
+      <Link href='/' className="main-element">
         Euler
       </Link>
       <div className="directories">
@@ -31,7 +35,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body className={work_sans.className}>
         {nav}
         {children}
         {footer}

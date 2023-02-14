@@ -1,5 +1,6 @@
 import fs from 'fs';
 import Link from 'next/link'
+import '../styles/home/home.css';
 
 const getPostData = () => {
   const folder = 'posts/'
@@ -21,8 +22,11 @@ const Home = () => {
   ));
 
   return (
-    <div>
-      <h1>Este es el home</h1>
+    <div >
+      <div className="main-image-background">
+        
+      </div>
+      <h1 className='main-title'>Learn to understand, not to memorize</h1>
       {postPreview}
     </div>
   );
