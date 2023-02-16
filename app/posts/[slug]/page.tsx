@@ -1,5 +1,6 @@
 import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
+import 'styles/home/home.css'
 
 const getContent = (slug: string) => {
     const folder = "posts/"
@@ -19,6 +20,9 @@ const PostPage = (props: any) => {
             <Markdown>{content}</Markdown>
         </div>
     )
+
 }
 
+
 export default PostPage
+export {getContent}
