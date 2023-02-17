@@ -52,6 +52,14 @@ const Home = () => {
           image="Estructuras%20de%20control"
           numImage="1"
         ></Image_part>
+        <Image_part
+          image="React%20Context"
+          numImage="2"
+        ></Image_part>
+         <Image_part
+          image="while%20Loop"
+          numImage="3"
+        ></Image_part>
       </div>
 
       {postPreview}
