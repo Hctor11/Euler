@@ -22,11 +22,7 @@ export default function RootLayout({
     </div>
   );
 
-  const footer = (
-    <footer>
-      <p>este es un foooter</p>
-    </footer>
-  )
+
 
   return (
     <html lang="en">
@@ -38,7 +34,6 @@ export default function RootLayout({
       <body className={work_sans.className}>
         {nav}
         {children}
-        {footer}
         </body>
     </html>
   )

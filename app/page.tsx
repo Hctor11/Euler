@@ -26,7 +26,7 @@ const Home = () => {
   const imgPath = "/main-image.png";
 
   return (
-    <div>
+    <div className="container">
       <h1 className="main-title">Learn to understand, not to memorize</h1>
       <div className="main-image-background">
         <Image
