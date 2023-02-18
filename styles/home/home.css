@@ -64,9 +64,19 @@ a {
   display: flex;
   margin: 10px;
   transition: all 0.3s ease 0s;
+  border-radius: 10px;
 }
 
 .image:hover {
+  transform: translateY(-5px);
+}
+
+.entries-title {
+  color: #5C5C5C;
+  transition: all 0.3s ease 0s;
+}
+
+.entries-title:hover {
   transform: translateY(-5px);
 }
 

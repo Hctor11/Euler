@@ -18,7 +18,7 @@ const Home = () => {
   const postPreview = postMetaData.map((slug) => (
     <div>
       <Link href={`/posts/${slug}`}>
-        <h2>{slug}</h2>
+        <h2 className="entries-title">{slug}</h2>
       </Link>
     </div>
   ));
@@ -61,7 +61,7 @@ const Home = () => {
           numImage="3"
         ></Image_part>
       </div>
-
+      <h3>entries</h3>
       {postPreview}
     </div>
   );
