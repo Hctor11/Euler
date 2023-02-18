@@ -1,20 +1,12 @@
 # Estructuras de control
 En [[Java]] la estructura de control que se mira en un inicio es la estructura secuencial, este tipo de estructuras es la que se ejecuta un paso a la vez de manera lineal, yendo paso a paso por cada instruccion.
 
->_ejemplo de una estructura secuencial_
->![[Pasted image 20211119180016.png]]
-
 ### Estructura selectiva simple
 En las estructuras selectivas mas simples son aquellas que depuran los datos ingresados con operadores que dividen en 2 los resultados posibles: __true o false.__
 
->_Flujograma de estructura selectiva simple_
->![[Pasted image 20211119180404.png]]
 
 ### Estructura selectiva doble
 En las estructuras selectivas dobles, aparte de depurar en _true o false_, tambien generan codigo distinto dependiendo de si los valores ingresados dieron verdadero o falso.
-
->_Flujograma de una estructura selectiva doble_
->![[Pasted image 20211119180718.png]]
 
 ### Estructura Selectiva anidada
 En estas estructuras los condicionales se anidan, dejando lugar a que sea posible la depuracion de datos ya antes depurados.

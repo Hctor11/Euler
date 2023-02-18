@@ -1,3 +1,5 @@
+# React Context
+
 React context es una propiedada que nos deja usar y consumir datos en cualquier componente que necesitemos en nuestra app usuando propiedades.
 
 ## Casos de uso de React Context
@@ -39,10 +41,6 @@ function Header({ theme }) {
     </>
   );
 }
-
 ```
 
 El problema es que estamos perforando la prop ___theme___ a través de múltiples componentes que no lo necesitan inmediatamente.
-
-[[React]]
-[[01 Conceptos Basicos]]

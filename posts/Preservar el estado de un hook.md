@@ -1,3 +1,5 @@
+# Preservar el estado de un hook
+
 cómo hace React para saber cuál estado corresponde a cuál llamado del `useState`?
 
 La respuesta es que **React se basa en el orden en el cual los Hooks son llamados**. Nuestro ejemplo funciona porque el orden en los llamados de los Hooks son el mismo en cada render:
@@ -21,8 +23,3 @@ useEffect(updateTitle)     // 4. Reemplaza el efecto de actualización del títu
 ```
 
 Siempre y cuando el orden los llamados a los hooks sean los mismos entre renders, React puede asociar algun estado local con cada uno de ellos.
-
-
-[[React]]
-[[05 Hooks]]
-[[09 Reglas de los Hooks]]

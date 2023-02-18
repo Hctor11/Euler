@@ -1,8 +1,6 @@
 # While
 En [[Java]] tambien hay bucles, uno de estos bucles es el bucle mientras, el cual funciona de la siguiente manera:
 
->![[Pasted image 20211124162524.png]]
-
 ```Java
 /*
 Algoritmo que hace que imprima los numeros
@@ -19,7 +17,6 @@ public class WhileAVerSiSirve {
     }
 }
 ```
-
 
 
 ```Java
